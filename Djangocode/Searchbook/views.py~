@@ -2,7 +2,7 @@
 from django.shortcuts import render_to_response
 from dj.models import Book,Author
 
-#main functions    
+    
 def search(request):
     errors = []
     if 'q' in request.GET:
