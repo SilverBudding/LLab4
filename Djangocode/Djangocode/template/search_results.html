@@ -1,0 +1,14 @@
+<p>You searched for: <strong>{{ query }}</strong></p>
+{% if author %}
+<ul>
+{% for book in books %}
+<li><a href="/title/{{book.ISBN}}">Title:{{ book.Title }}</a></li>
+<div>
+<a href="/delete/{{book.ISBN}}">delete</a>
+</div>
+{% endfor %}
+</ul>
+{% else %}
+<p>No books matched your search criteria.</p>
+{% endif %}
+<li><a href="../">Search</a></li>

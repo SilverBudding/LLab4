@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Search</title>
+</head>
+<body>
+<form action="" method="get">
+{% if errors %}
+<ul>
+{% for error in errors %}
+<li>{{ error }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+<input type="text" name="q">
+<input type="submit" value="Search">
+</form>
+<li><a href="../add_author/">Add_Author</a></li>
+<li><a href="../add_book/">Add_book</a></li>
+</body>
+</html>
